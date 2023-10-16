@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(33, 75, 67);
+}
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  background-color: rgb(251, 211, 217);
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid black;
+  grid-column: span 2fr;
+  overflow: hidden;
+}
+
+.image {
+  grid-column: 3/4;
+}
+
+.demo-form {
+  grid-column: span 2;
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+input {
+  place-content: center;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 16px 12px;
+  border: 0.3px solid black;
+}
+
+.rowinputs {
+  display: flex;
+  gap: 10px;
+}
+
+.rowinputs > input {
+  width: 50%;
+}
+
+p {
+  width: 100%;
+  font-weight: bold;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+section {
+  margin-top: 5px;
+}
+
+.checkboxsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 10px;
+}
+
+.checkboxsection :first-child {
+  grid-area: 1 / 1 / 2 / 3;
+  margin-bottom: 10px;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: green;
+}

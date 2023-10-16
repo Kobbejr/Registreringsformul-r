@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registreringsformulär</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form
+          action="https://httpbin.org/anything"
+          method="POST"
+          class="demo-form"
+        >
+          <h1 class="starttext optionSpan2">
+            Tell us about yourself so we can show you a demo on the first call
+          </h1>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your work email *"
+            required
+          />
+          <div class="rowinputs">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First name *"
+              required
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last name *"
+              required
+            />
+          </div>
+          <input
+            type="text"
+            name="Company name"
+            id="companyname"
+            placeholder="Company name *"
+            required
+          />
+          <section>
+            <p>Company size *</p>
+            <div class="radio-container">
+              <div class="radio-buttons">
+                <input
+                  type="radio"
+                  value="1-20"
+                  name="companysize"
+                  id="companysize1-20"
+                />
+                <label for="1-20">1-20</label>
+              </div>
+
+              <div class="radio-buttons">
+                <input
+                  type="radio"
+                  value="21-50"
+                  name="companysize"
+                  id="companysize21-50"
+                />
+                <label for="21-50">21-50</label>
+              </div>
+
+              <div class="radio-buttons">
+                <input
+                  type="radio"
+                  value="51-200"
+                  name="companysize"
+                  id="companysize51-200"
+                />
+                <label for="51-200">51-200</label>
+              </div>
+
+              <div class="radio-buttons">
+                <input
+                  type="radio"
+                  value="201-1000"
+                  name="companysize"
+                  id="companysize201-1000"
+                />
+                <label for="201-1000">201-1000</label>
+              </div>
+
+              <div class="radio-buttons">
+                <input
+                  type="radio"
+                  value="1000+"
+                  name="companysize"
+                  id="companysize1000+"
+                />
+                <label for="1000+">1000+</label>
+              </div>
+            </div>
+          </section>
+          <section class="checkboxsection">
+            <p>What are you looking for?</p>
+            <div class="checkboxes">
+              <input
+                type="checkbox"
+                value="Product tours"
+                name="whatareyoulookingfor"
+                id="producttours"
+              />
+              <label for="producttours" class="checkbox-label"
+                >Product tours</label
+              >
+            </div>
+
+            <div class="checkboxes">
+              <input
+                type="checkbox"
+                value="A reliable demo environment"
+                name="whatareyoulookingfor"
+                id="areliabledemoenvironment"
+              />
+              <label for="areliabledemoenvironment" class="checkbox-label"
+                >A reliable demo environment</label
+              >
+            </div>
+
+            <div class="checkboxes">
+              <input
+                type="checkbox"
+                value="Customized live demos"
+                name="whatareyoulookingfor"
+                id="customizedlivedemos"
+              />
+              <label for="customizedlivedemos" class="checkbox-label"
+                >Customized live demos</label
+              >
+            </div>
+
+            <div class="checkboxes">
+              <input
+                type="checkbox"
+                value="NEW - Demo a mobile app"
+                name="whatareyoulookingfor"
+                id="demoamobileapp"
+              />
+              <label for="demoamobileapp" class="checkbox-label"
+                >NEW - Demo a mobile app</label
+              >
+            </div>
+          </section>
+          <section class="rowinputs">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Choose a password *"
+              required
+            />
+            <input type="submit" name="submit" id="submit" value="Submit" />
+          </section>
+        </form>
+
+        <img
+          class="image"
+          src="bild/signup-form-asset.8fd506a5 (1).svg"
+          alt="bild"
+        />
+      </div>
+    </div>
+  </body>
+</html>
